@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="/favicon.ico" rel="icon" type="image/png"/>
+  <!-- Framework CSS -->
+  <link href="/consultaProcessual/css/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="/consultaProcessual/css/blueprint/print.css" media="print" rel="stylesheet" type="text/css"/>
+  <!--[if IE]><link rel="stylesheet" href="/consultaProcessual/css/blueprint-0.8/ie.css" type="text/css" media="screen"><![endif]-->
+  <link href="/consultaProcessual/css/template_css.css?2" media="screen" rel="stylesheet" type="text/css">
+   <link disabled="disabled" href="/consultaProcessual/css/template_altoContraste.css?2" media="screen" rel="stylesheet" title="altoContraste" type="text/css">
+    <link disabled="disabled" href="/consultaProcessual/css/template_monocromatica.css?2" media="screen" rel="stylesheet" title="monocromatica" type="text/css">
+     <link href="/consultaProcessual/css/index.css?2" media="screen" rel="stylesheet" type="text/css"/>
+     <script type="text/javascript">
+      var baseUrl = '/consultaProcessual';
+     </script>
+     <link href="/consultaProcessual/js/jquery-ui/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css"/>
+     <script src="/consultaProcessual/js/jquery-ui/external/jquery/jquery.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery-ui/jquery-ui.min.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.crypt.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.browser.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.dialogr.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.fontResize.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.metadata.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.numeric.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.tipTip.minified.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.validate.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/jquery.watermarkinput.js" type="text/javascript">
+     </script>
+     <script>
+      JQUERY_UI_ICONS = '/consultaProcessual/js/jquery-ui/images/ui-icons_6da8d5_256x240.png';
+     </script>
+     <script src="/consultaProcessual/js/Cookie.js" type="text/javascript">
+     </script>
+     <script src="/consultaProcessual/js/index.js" type="text/javascript">
+     </script>
+     <!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+     <script type="text/javascript">
+      var appCache = window.applicationCache;
+
+  if (appCache != null) {
+    appCache.update(); // Attempt to update the user's cache.
+  }
+
+  if (appCache.status == window.applicationCache.UPDATEREADY) {
+    appCache.swapCache();  // The fetch was successful, swap in the new cache.
+  }
+     </script>
+     <!-- Google Analytics -->
+     <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27512799-2', 'auto');
+    ga('send', 'pageview');
+     </script>
+     <!-- End Google Analytics -->
+     <link href="/consultaProcessual/css/tipTip.css" media="screen" rel="stylesheet" type="text/css"/>
+     <script src="/consultaProcessual/js/processo.js?1647556052" type="text/javascript">
+     </script>
+     <!-- IMplementacao reCaptchaV3 -->
+     <script src="/consultaProcessual/js/ReCaptchaV3.js" type="text/javascript">
+     </script>
+     <script>
+      $(document).ready(function() {
+        ReCaptchaV3.init();
+    });
+     </script>
+     <!-- IMplementacao reCaptchaV3 -->
+     <style type="text/css">
+      tbody th {
+	text-align: right;
+}
+
+.ui-widget-content a {
+	color: #2E6E9E;
+	text-decoration: none;
+	outline: 0;
+}
+
+label {
+	margin: 0.5em 0;
+	display: block;
+}
+     </style>
+     <link href="/consultaProcessual/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+    </link>
+   </link>
+  </link>
+ </head>
+ <body>
+  <div class="container" id="container">
+   <div id="header">
+    <div id="topo">
+     <h1>
+      <a href="#" title="Tribunal Regional Federal da Primeira Região">
+       Tribunal Regional Federal da Primeira
+			Região
+      </a>
+     </h1>
+     <div id="topo-center">
+      <p id="trf1">
+       Tribunal Regional Federal da Primeira Região
+      </p>
+      <p id="trf1-telefone">
+       (61) 3314-5225
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="span-24 clear" id="tools">
+    <div class="span-20 first" id="bread">
+     <ul>
+      <li class="bread-first">
+       <a href="#">
+        Início
+       </a>
+      </li>
+      <li>
+       <a href="/consultaProcessual/index.php?secao=TRF1">
+        Consulta Processual / TRF1
+       </a>
+      </li>
+      <li>
+       <a href="/consultaProcessual/numeroProcesso.php?secao=TRF1">
+        Por número do processo
+       </a>
+      </li>
+      <li>
+       <span>
+        0257200-52.2009.4.01.9198
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div class="span-1" id="imprimir">
+     <a href="#" rel="#container_print" title="Imprimir">
+      <span>
+       Imprimir
+      </span>
+     </a>
+    </div>
+    <div class="span-3 last" id="acessibilidade">
+    </div>
+   </div>
+   <div class="span-24 clear esconderImpressao hide" id="container_print">
+    <div class="span-3 first esconderImpressao">
+     <label>
+      <input checked="checked" name="prnProcesso" rel="" type="checkbox" value="#aba-processo"/>
+      Processo
+     </label>
+    </div>
+    <div class="span-4 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnMovimentacao" rel="#qtdMov" type="checkbox" value="#aba-movimentacao"/>
+      Movimentações
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdMov" maxlength="3" name="qtdMov" rel="#aba-movimentacao" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-3 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnPartes" rel="#qtdParte" type="checkbox" value="#aba-partes"/>
+      Partes
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdParte" maxlength="3" name="qtdParte" rel="#aba-partes" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-3 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnDocumentos" rel="#qtdDoc" type="checkbox" value="#aba-documentos"/>
+      Documentos
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdDoc" maxlength="3" name="qtdDoc" rel="#aba-documentos" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-4 esconderImpressao">
+     <label>
+      <input checked="checked" name="prndistribuicao" rel="#qtdDistr" type="checkbox" value="#aba-distribuicao"/>
+      Distribuição
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdDistr" maxlength="3" name="qtdDistr" rel="#aba-distribuicao" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-4 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnIncidentes" rel="#qtdInc" type="checkbox" value="#aba-incidentes"/>
+      Incidentes
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdInc" maxlength="3" name="qtdInc" rel="#aba-incidentes" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-3 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnPeticoes" rel="#qtdPet" type="checkbox" value="#aba-peticoes"/>
+      Petições
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdPet" maxlength="3" name="qtdPet" rel="#aba-peticoes" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-3 esconderImpressao">
+     <label>
+      <input checked="checked" name="prnAcessos" rel="#qtdAce" type="checkbox" value="#ui-tabs-1"/>
+      Acessos
+     </label>
+     <p>
+      <input class="qtd-prn" id="qtdAce" maxlength="3" name="qtdAce" rel="#ui-tabs-1" size="10" type="text"/>
+     </p>
+    </div>
+    <div class="span-3 last esconderImpressao">
+     <button class="btn-print">
+      Imprimir
+     </button>
+    </div>
+   </div>
+   <div class="span-24 first last">
+    <div class="span-5" id="left_side">
+     <div class="span-5 first last" id="menu-tools">
+      <div class="span-5 first last">
+       <a class="ui-widget" href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7" id="menu1-close" target="_blank">
+        Relatório de Indisponibilidade
+       </a>
+      </div>
+      <!--div class="span-2 last">
+        
+		<a id="menu-open" href="#">Abrir todos</a>
+        
+	</div-->
+     </div>
+     <div class="span-5 first last append-bottom menu menu-verde">
+      <h3>
+       <a href="#acessoRapido">
+        Opções de pesquisa
+       </a>
+      </h3>
+      <ul class="filetree">
+       <li>
+        <a href="/consultaProcessual/numeroProcesso.php?secao=TRF1" title="Número do Processo">
+         Número do
+				Processo
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/nomeParte.php?secao=TRF1" title="Nome da Parte">
+         Nome da Parte
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/cpfCnpjParte.php?secao=TRF1" title="CPF/CNPJ da parte">
+         CPF/CNPJ da parte
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/nomeAdvogado.php?secao=TRF1" title="Nome do Advogado">
+         Nome do Advogado
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/oabAdvogado.php?secao=TRF1" title="Código OAB do Advogado">
+         Código OAB do
+				Advogado
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/numeroProcessoOriginario.php?secao=TRF1" title="Número do Processo Originário">
+         Número
+				do Processo Originário
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/numeroProcessoExecucao.php?secao=TRF1" title="Número do Processo de Execução">
+         Número
+				do Processo de Execução
+        </a>
+       </li>
+       <li>
+        <a href="/consultaProcessual/protocoloSedex.php?secao=TRF1" title="Protocolo SEDEX">
+         Protocolo SEDEX
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="span-19 last" id="content">
+     <div class="span-19 last" id="content-center">
+      <!--div id="fazer_login1" class="span-8 last" style="display: block;">
+							<a class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" target="_blank" href="http://www.trf1.jus.br/Servicos/RelatorioIndisponibilidade/view_user.php#7"><span class="ui-button-text">Relatório de Indisponibilidade</span></a>
+						</div-->
+      <div class="span-10 last" id="tools-usuario" style="float: right;">
+       <div class="span-10 last" id="tools-usuario" style="float: right; text-align: right;">
+        <div class="span-7 last" id="fazer_login" style="display: block;">
+         <a href="#">
+          Login
+         </a>
+        </div>
+        <div class="span-7 last" id="user-name" style="float:left; display: none;">
+         <strong id="cpf-usuario">
+         </strong>
+         /
+         <span id="perfil-usuario">
+         </span>
+         <span id="cnj-usuario">
+         </span>
+         /
+         <a href="/consultaProcessual/arquivo/login/sairLogin.php" id="link_sair" rel="link_sair">
+          Sair
+         </a>
+        </div>
+        <a class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="http://portal.trf1.jus.br/portaltrf1/institucional/conciliacao/quero-conciliar/" target="_blank">
+         <span class="ui-button-text">
+          Quero Conciliar
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="span-19 last clear">
+      <div id="acessibilidade">
+      </div>
+     </div>
+     <!-- <div class="notice span-12 last clear">Sistemas em manutenção</div> -->
+     <div class="span-19 last clear noticia-letra">
+      <div class="error span-18 last clear">
+       Para pesquisar Precatório ou RPV utilize uma das seguintes opções: nome ou CPF da parte, nome ou OAB do advogado, número do processo originário ou de execução.
+      </div>
+      <div class="span-18 clear" style="clear: both; float: none;">
+       <p>
+        <span>
+         Emitido pelo site www.trf1.jus.br em 17/03/2022 às 19:27:32 Consulta respondida em 0,034 segundos
+         <!--172.16.3.159-->
+        </span>
+       </p>
+       <p>
+        <span>
+         Este serviço tem caráter meramente informativo, portanto, SEM cunho oficial.
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div class="container" style="display: block; width: 960px; overflow: hidden; margin: 0 auto;">
+    <div class="box-footer span-24">
+     <span>
+      Edifício Sede 1: SAU/SUL Quadra 2, Bloco A, Praça dos Tribunais Superiores
+     </span>
+     <br/>
+     <span>
+      CEP: 70070-900 | Brasília/DF
+     </span>
+    </div>
+   </div>
+   <div id="foot">
+    <div class="container">
+     <div id="direitos">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="span-4" id="loading">
+   <div class="span-1 last" style="margin: 1px 0 0 30px">
+    <img alt="Carregando..." src="/consultaProcessual/images/ajax-loader_1.gif"/>
+   </div>
+   <div class="span-2">
+    <strong>
+     Aguarde...
+    </strong>
+   </div>
+  </div>
+  <div id="download">
+   <div class="flash" style="display: none;">
+   </div>
+   <div id="container_pbar">
+    <div id="pbar_label">
+    </div>
+    <div id="pbar" style="height: 20px;">
+    </div>
+   </div>
+   <div id="container_download">
+   </div>
+  </div>
+  <div id="dialog_print">
+  </div>
+  <div id="dialog_pub">
+  </div>
+  <div id="dialog">
+  </div>
+  <div id="dialog_login">
+   <!--<form name="form1" id="form1" method="post" action="/consultaProcessual/arquivo/login/autenticar.php?secao=TRF1">-->
+   <form action="/consultaProcessual/arquivo/login/mudarLogin.php?secao=TRF1" id="frm-mudar-usuario" method="post" name="frm-mudar-usuario">
+    <div class="flash" style="display: none;">
+    </div>
+    <div class="span-9">
+     <div class="span-4" style="text-align: left;">
+      <label>
+       CPF
+       <span id="matricula" style="display: none">
+        / Matrícula
+       </span>
+       :
+      </label>
+     </div>
+     <div class="span-4" style="text-align: left;">
+      <input class="text span-3" id="cpf" name="cpf" type="text" value=""/>
+     </div>
+    </div>
+    <div class="span-9">
+     <div class="span-4" style="text-align: left;">
+      <label>
+       Senha:
+      </label>
+     </div>
+     <div class="span-4" style="text-align: left;">
+      <input class="text span-3" id="senha" name="senha" type="password" value=""/>
+      <img class="tiptip" src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;" title="Informar o CPF e senha do cadastro do e-Proc."/>
+     </div>
+    </div>
+    <input name="fase_id" type="hidden" value=""/>
+    <input name="DataCons" type="hidden" value="20220317_19_27_32"/>
+    <input name="proc" type="hidden" value="2572005220094019198"/>
+    <input name="secao" type="hidden" value="TRF1"/>
+    <input name="nome" type="hidden" value="JOAO SILVA"/>
+    <input name="mostrarBaixados" type="hidden" value="N"/>
+    <div class="span-9 esconderImpressao" id="container-secao" style="display: none;">
+     <div class="span-4">
+      <label for="secao">
+       Órgão
+      </label>
+     </div>
+     <div class="span-4">
+      <select class="consulta" disabled="disabled" id="secao" name="secao" size="1">
+       <option value="">
+        Selecione
+       </option>
+       <option value="TRF1">
+        TRF 1ª Região
+       </option>
+       <option value="AC">
+        JFAC
+       </option>
+       <option value="AM">
+        JFAM
+       </option>
+       <option value="AP">
+        JFAP
+       </option>
+       <option value="BA">
+        JFBA
+       </option>
+       <option value="DF">
+        JFDF
+       </option>
+       <option value="GO">
+        JFGO
+       </option>
+       <option value="MA">
+        JFMA
+       </option>
+       <option value="MG">
+        JFMG
+       </option>
+       <option value="MT">
+        JFMT
+       </option>
+       <option value="PA">
+        JFPA
+       </option>
+       <option value="PI">
+        JFPI
+       </option>
+       <option value="RO">
+        JFRO
+       </option>
+       <option value="RR">
+        JFRR
+       </option>
+       <option value="TO">
+        JFTO
+       </option>
+      </select>
+     </div>
+    </div>
+    <div class="span-9" style="text-align: center;">
+     OU
+    </div>
+    <div class="span-9" style="text-align: left;">
+     <div class="span-4">
+      <label>
+       Chave de Acesso:
+      </label>
+     </div>
+     <div class="span-4">
+      <input class="text span-3" id="chave" name="chave" type="text" value=""/>
+      <img class="tiptip" src="/consultaProcessual/images/help_icon.png" style="cursor: pointer; vertical-align: middle;" title="Informar  o código fornecido pela Vara para acesso aos documentos."/>
+     </div>
+    </div>
+    <!--
+                <div id='chave'>
+	                <div class="span-8">
+
+	                    <div>
+	                    	<input type="submit" value="Ok" class="ui-button ui-widget ui-state-default ui-corner-all" name="enviarChave" id="enviarChave" style="width:270px"/>
+	                    </div>
+	                </div>
+	            </div>
+                    -->
+    <!--div class="span-9" style="text-align: right;"><input type="submit" value="Ok" name="enviar" id="enviar" /> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Usuário não cadastrado, <a target="_blank" href="http://www.trf1.jus.br/Processos/ePeticao/ePetCadCpfAdv.php?Oper=F">clique aqui.</a></div-->
+    <div class="span-9" style="text-align: right;">
+     <input id="enviar" name="enviar" type="submit" value="Ok"/>
+    </div>
+   </form>
+  </div>
+  <div id="iframe_print" style="display: none">
+   <h1>
+    Tribunal Regional Federal da Primeira Região
+   </h1>
+   <h2>
+    Tribunal Regional Federal da 1ª Região
+   </h2>
+   <div id="prn-processo">
+   </div>
+   <div id="prn-distribuicao">
+   </div>
+   <div id="prn-movimentacao">
+   </div>
+   <div id="prn-incidentes">
+   </div>
+   <div id="prn-peticoes">
+   </div>
+   <div id="prn-partes">
+   </div>
+   <div id="prn-documentos">
+   </div>
+   <div id="prn-abs-1">
+   </div>
+  </div>
+  <script>
+   $(function(){
+			$(".tiptip").tipTip();
+		});
+  </script>
+  <div id="tiptip_holder">
+   <div id="tiptip_content">
+    <div id="tiptip_arrow">
+     <div id="tiptip_arrow_inner">
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+
