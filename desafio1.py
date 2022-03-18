@@ -50,4 +50,6 @@ process_list = getAllProcesses("João Silva")
 for process in process_list:
   process_reference = getProcessReference(process)
   process_params = getProcessParams(process_reference)
-  print(process_params)
+  # response = requests.get('https://processual.trf1.jus.br/consultaProcessual/processo.php', params=process_params).content
+  # soup = BeautifulSoup(response, 'html.parser')
+  # print(soup.prettify())
