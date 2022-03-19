@@ -22,5 +22,13 @@ for i in range(0, limit):
     process = elements[i].find_element_by_tag_name('a')
     process.click()
     time.sleep(2)
+
+    table_text = driver.find_elements_by_xpath('//*[@id="aba-processo"]')
+    for i in table_text:
+        print(i.text)
+    print(table_text)
+
+    time.sleep(2)
+
     driver.execute_script("window.history.go(-1)")
     driver.refresh()
