@@ -9,9 +9,7 @@ driver.get('https://processual.trf1.jus.br/consultaProcessual/nomeParte.php?pg=2
 
 inputElement = driver.find_element_by_id("nome")
 inputElement.send_keys('Joao Silva')
-inputElement.submit() 
-
-elements = driver.find_elements_by_class_name('listar-processo')
+inputElement.submit()
 
 flag = 0
 limit = 3
