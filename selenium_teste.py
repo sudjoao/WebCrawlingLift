@@ -14,21 +14,15 @@ inputElement.submit()
 elements = driver.find_elements_by_class_name('listar-processo')
 
 flag = 0
-
-for element in elements:
-
-    element.click()
-
-    time.sleep(0.05)
-    flag += 1
-    if flag >= 5:
-        break
-
-
-processos = driver.find_elements_by_class_name('lista-processo')
-
-for processo in processos:
-
-    proc = processo.find_element_by_tag_name('a')
-
-    proc.click()
+limit = 3
+for i in range(0, limit):
+    time.sleep(3)
+    elements = driver.find_elements_by_class_name('listar-processo')
+    elements[i].click()
+    time.sleep(3)
+    elements = driver.find_elements_by_class_name('lista-processo')
+    process = elements[i].find_element_by_tag_name('a')
+    process.click()
+    time.sleep(2)
+    driver.execute_script("window.history.go(-1)")
+    driver.refresh()
