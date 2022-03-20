@@ -12,8 +12,8 @@ def get_initial_data(driver):
 
 def get_current_process(driver, index):
     time.sleep(3)
-    elements = driver.find_elements_by_class_name('listar-processo')
-    elements[i].click()
+    process_list_elements = driver.find_elements_by_class_name('listar-processo')
+    process_list_elements[index].click()
     time.sleep(3)
     elements = driver.find_elements_by_class_name('lista-processo')
     process = elements[index].find_element_by_tag_name('a')
@@ -33,7 +33,7 @@ def get_process_rows(driver):
     rows = table.find_elements_by_tag_name('tr')
     return rows
 
-def get_row_info(row):
+def print_row_info(row):
     header = row.find_element_by_tag_name('th')
     header_html = BeautifulSoup(header.get_attribute("innerHTML"), "html.parser")
     content = row.find_element_by_tag_name('td')
@@ -44,18 +44,23 @@ def back_to_process_list_screen(driver):
     driver.execute_script("window.history.go(-1)")
     driver.refresh()
 
+def iterate_over_process_rows(rows):
+    for row in rows:
+        print_row_info(row)
+    print("\n")
+
 if __name__ == "__main__":
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     driver = webdriver.Chrome(options=options)
     get_initial_data(driver)
     limit = 2
+    
     for i in range(0, limit):
         get_current_process(driver, i)
         get_process_tabs(driver)
-        rows = get_process_rows(driver)
-        for row in rows:
-            get_row_info(row)
-        print('\n')
+        iterate_over_process_rows(get_process_rows(driver))
         if i != limit -1:
             back_to_process_list_screen(driver)
+    
+    driver.close()
