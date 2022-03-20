@@ -44,7 +44,7 @@ def back_to_process_list_screen(driver):
     driver.execute_script("window.history.go(-1)")
     driver.refresh()
 
-def iterate_over_process_rows(rows):
+def print_process_rows(rows):
     for row in rows:
         print_row_info(row)
     print("\n")
@@ -59,6 +59,15 @@ def create_columns(rows, writer):
     
     writer.writerow(columns)
 
+def create_rows(rows, writer):
+    contents = []
+
+    for row in rows:
+        content = row.find_element_by_tag_name('td')
+        content_html = BeautifulSoup(content.get_attribute("innerHTML"), "html.parser")
+        contents.append((content_html.text or "-").strip())
+
+    writer.writerow(contents)
 
 if __name__ == "__main__":
     options = webdriver.ChromeOptions()
@@ -67,7 +76,7 @@ if __name__ == "__main__":
     get_initial_data(driver)
     limit = 2
     first_process = True
-    process_csv_file = open('csvs/process_csv_file.csv', 'w', encoding='utf-8')
+    process_csv_file = open('csvs/process_csv_file.csv', 'w', encoding='utf-8', newline='')
     writer = csv.writer(process_csv_file, delimiter = '\t')
 
     for i in range(0, limit):
@@ -77,8 +86,9 @@ if __name__ == "__main__":
         if first_process:
             create_columns(rows, writer)
             first_process = False
-        #get_process_tabs(driver)
-        iterate_over_process_rows(rows)
+        get_process_tabs(driver)
+        print_process_rows(rows)
+        create_rows(rows, writer)
         if i != limit -1:
             back_to_process_list_screen(driver)
     
