@@ -1,0 +1,1 @@
+SEARCH_URL = "https://processual.trf1.jus.br/consultaProcessual/nomeParte.php?pg=2&secao=TRF1"

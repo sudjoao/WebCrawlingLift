@@ -1,12 +1,11 @@
-from selenium import webdriver
-import time
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
+import constants
+
 def get_initial_data(driver):
-    driver.get('https://processual.trf1.jus.br/consultaProcessual/nomeParte.php?pg=2&secao=TRF1')
+    driver.get(constants.SEARCH_URL)
     inputElement = driver.find_element_by_id("nome")
     inputElement.send_keys('Joao Silva')
     inputElement.submit()
