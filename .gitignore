@@ -132,4 +132,4 @@ dmypy.json
 chromedriver**
 
 # CSVs
-#csvs/**
+csvs/**.csv
