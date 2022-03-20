@@ -130,3 +130,6 @@ dmypy.json
 
 # Chrome Driver exec
 chromedriver**
+
+# CSVs
+#csvs/**

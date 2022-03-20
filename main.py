@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
-
+import csv
 import constants
 
 def get_initial_data(driver):
@@ -49,17 +49,36 @@ def iterate_over_process_rows(rows):
         print_row_info(row)
     print("\n")
 
+def create_columns(rows, writer):
+    columns = []
+
+    for row in rows:
+        header = row.find_element_by_tag_name('th')
+        header_html = BeautifulSoup(header.get_attribute("innerHTML"), "html.parser")
+        columns.append(header_html.text.replace(":", "").strip())
+    
+    writer.writerow(columns)
+
+
 if __name__ == "__main__":
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     driver = webdriver.Chrome(options=options)
     get_initial_data(driver)
     limit = 2
-    
+    first_process = True
+    process_csv_file = open('csvs/process_csv_file.csv', 'w', encoding='utf-8')
+    writer = csv.writer(process_csv_file, delimiter = '\t')
+
     for i in range(0, limit):
         get_current_process(driver, i)
-        get_process_tabs(driver)
-        iterate_over_process_rows(get_process_rows(driver))
+        rows = get_process_rows(driver)
+
+        if first_process:
+            create_columns(rows, writer)
+            first_process = False
+        #get_process_tabs(driver)
+        iterate_over_process_rows(rows)
         if i != limit -1:
             back_to_process_list_screen(driver)
     
